@@ -4,9 +4,9 @@ Group G1
 -----------------------------------
 
 Aakash Mittal - 21120005 - Equal Contribution\
+Mekala Rishitha Ravi - 19110094 - Equal Contribution\
 Rakesh Thakur - 20210013 - Equal Contribution\
-Shantanu Sahu - 19110100 - Equal Contribution\
-Mekala Rishitha Ravi - 19110094 - Equal Contribution
+Shantanu Sahu - 19110100 - Equal Contribution
 
 
 Group G2 
