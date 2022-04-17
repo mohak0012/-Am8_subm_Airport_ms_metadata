@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Managment</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1><span>
+                Airport Managment System
+            </span></h1>
+    </header>
+    <br><br><br>
+    <h2>
+        Select the Table in which you want to make changes
+    </h2>
+
+    <form method="POST" action="">
+        <input type="submit" name="sub" value="City">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Airport">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Airport_consists_of">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Airline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Flight">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Flight_info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Notice_board">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Flight_Passenger_transmits">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Employee"><br><br>
+        <input type="submit" name="sub" value="Employee_handles">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Passenger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Ticket">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Admin_Support">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Engineer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Luggage">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Connecting_Flight">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="sub" value="Non_Stop_Flight">
+    </form>
+    <br>
+    <div class="in">
+        <div class="inst">
+            <h2>INSTRUCTIONS</h2>
+        </div>
+        <div class="instruction" style="font-size: larger; font-weight: 600;">
+            <ul>
+                <li>Airport includes of foreign key from city table known as city_name.</li>
+                <li>Airport_consist_of includes a foreign key from airport and airline table.</li>
+                <li>Air_ID is the foreign key to refer in Airline in Flight table.</li>
+                <li>In Flight_info, FNo is the foreign key to refer in Flight and NB_ID is the foreign key to refer in
+                    Notice_board.</li>
+                <li>In Flight_Passenger_transmits, FNo, P_ID and NB_ID are the foreign key to refer Flight, Passenger
+                    and Notice_board respectively.</li>
+                <li>In Employee, A_Name are the foreign key.</li>
+                <li>In Employee_handles, Emp_ID and P_ID are the foreign key refer to Employee and Passenger
+                    respectively.</li>
+                <li>In Ticket, P_ID is the foreign key to refer in Passenger.</li>
+                <li>In Admin_Support, Emp_ID is the foreign key taken from employee table.</li>
+                <li>In Engineer, Emp_ID is the foreign key taken from employee table.</li>
+                <li>In Luggage, P_ID is the foreign key taken from passenger table.</li>
+                <li>In Connecting_Flight and Non_Stop_Flight, FNo is the foreign key taken from flight table.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <img src="/static/air_mange.jpg" alt="">
+
+
+</body>
+
+</html>
